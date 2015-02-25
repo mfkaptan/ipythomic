@@ -16,7 +16,7 @@ Don't have a microphone? Try redirecting your speakers to your microphone! It is
 
 ###Requirements & Other Libraries
 - IPython (version > 2.0)
-- Projessingjs (included)
+- Processingjs (included)
 - Alsaaudio (`$ sudo apt-get install python-alsaaudio`)
 
 Tested on Ubuntu 14.04
