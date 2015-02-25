@@ -13,18 +13,20 @@ require(["widgets/js/widget"], function(WidgetManager) {
                 .appendTo(this.$el);
 
             /* Radio inputs */
+            var labelLine = $("<label>").text('Lines ').appendTo(this.$el);
             this.$graphLine = $('<input type="radio" id="lines" />')
                 .attr('name', 'gType')
                 .attr('checked', 'checked')
                 .attr('onclick', 'window.graphType = "lines";')
                 .attr('tabindex', '1')
-                .appendTo(this.$el);
+                .appendTo(labelLine);
 
+            var labelBar = $("<label>").text('Bars ').appendTo(this.$el);
             this.$graphBar = $('<input type="radio" id="bars" />')
                 .attr('name', 'gType')
                 .attr('onclick', 'window.graphType = "bars";')
                 .attr('tabindex', '1')
-                .appendTo(this.$el);
+                .appendTo(labelBar);
 
             /*** SCRIPT ***/
             /* Constants */
