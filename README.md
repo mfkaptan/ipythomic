@@ -15,7 +15,7 @@ Don't have a microphone? Try redirecting your speakers to your microphone! It is
 - Select 'Monitor of Built-in Stereo' (Try re-running the notebook demo if you don't see it)
 
 ###Requirements & Other Libraries
-- IPython (version > 3.0)
+- IPython notebook (version >= 3.0)
 - Processingjs (included)
 - Alsaaudio (`$ sudo apt-get install python-alsaaudio`)
 
