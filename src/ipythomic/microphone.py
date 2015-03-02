@@ -6,8 +6,8 @@ try:
     import tornado
     import IPython
     IPYTHON_VERSION = IPython.version_info[0]
-    if IPYTHON_VERSION < 2:
-        raise RuntimeError('Requires IPython >= 2.0')
+    if IPYTHON_VERSION < 3:
+        raise RuntimeError('Requires IPython >= 3.0')
     from IPython.html.widgets import DOMWidget
     from IPython.utils.traitlets import Unicode, Int
     from IPython.display import display, Javascript
