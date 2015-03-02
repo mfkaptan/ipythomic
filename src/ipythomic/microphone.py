@@ -57,7 +57,7 @@ class MicrophoneWidget(DOMWidget):
     def _prepare_js(self):
         pkgdir = op.dirname(__file__)
         jsdir = op.join(pkgdir, '../js')
-        install_nbextension(op.join(jsdir, 'processing.min.js'))
+        install_nbextension(op.join(jsdir, 'processing.min.js'), user=True)
         ipythomic_js = op.join(jsdir, 'ipythomic.js')
         with open(ipythomic_js, 'r') as f:
             script = f.read()

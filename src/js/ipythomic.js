@@ -1,9 +1,9 @@
 /* Load processing.js in the notebook. */
 IPython.load_extensions("processing.min");
 
-require(["widgets/js/widget"], function(WidgetManager) {
+require(["widgets/js/widget", "widgets/js/manager"], function(widget, manager) {
     /* Define the MicrophoneWidget */
-    var MicrophoneWidget = IPython.DOMWidgetView.extend({
+    var MicrophoneWidget = widget.DOMWidgetView.extend({
         render: function() {
             /*** HTML ***/
             /* Canvas */
@@ -84,5 +84,5 @@ require(["widgets/js/widget"], function(WidgetManager) {
     });
 
     /* Register the MicrophoneWidget with the widget manager. */
-    WidgetManager.register_widget_view('MicrophoneWidget', MicrophoneWidget);
+    manager.WidgetManager.register_widget_view('MicrophoneWidget', MicrophoneWidget);
 });
